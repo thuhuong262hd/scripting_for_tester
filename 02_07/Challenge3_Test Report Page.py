@@ -134,6 +134,6 @@ for row in chart_data[1:]:
 #substitute the data into the template
 completed_html = htmlString.substitute(labels=chart_data[0], data=chart_data_str)
 
-with open('Chart.html','w') as f:
+with open('Chart1.html','w') as f:
     #write the html string you've create to a file
     f.write(completed_html)
