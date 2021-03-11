@@ -1,0 +1,62 @@
+<html><head><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart(){
+      var data = google.visualization.arrayToDataTable([   
+        ['Test Name', 'NumberOfAsserts', 'NumberOfFailedAsserts'],
+        ['Test 1', 32.0, 2.0], 
+['Test 2', 31.0, 5.0], 
+['Test 3', 27.0, 4.0], 
+['Test 4', 14.0, 5.0], 
+['Test 5', 14.0, 4.0], 
+['Test 6', 22.0, 1.0], 
+['Test 7', 47.0, 3.0], 
+['Test 8', 26.0, 0.0], 
+['Test 9', 12.0, 5.0], 
+['Test 10', 8.0, 5.0], 
+['Test 11', 34.0, 2.0], 
+['Test 12', 40.0, 2.0], 
+['Test 13', 24.0, 2.0], 
+['Test 14', 2.0, 0.0], 
+['Test 15', 46.0, 3.0], 
+['Test 16', 8.0, 3.0], 
+['Test 17', 44.0, 1.0], 
+['Test 18', 49.0, 0.0], 
+['Test 19', 26.0, 3.0], 
+['Test 20', 25.0, 5.0], 
+['Test 21', 13.0, 1.0], 
+['Test 22', 9.0, 4.0], 
+['Test 23', 41.0, 1.0], 
+['Test 24', 30.0, 0.0], 
+['Test 25', 33.0, 4.0], 
+['Test 26', 23.0, 3.0], 
+['Test 27', 13.0, 4.0], 
+['Test 28', 40.0, 1.0], 
+['Test 29', 33.0, 0.0], 
+['Test 30', 18.0, 0.0], 
+['Test 31', 27.0, 1.0], 
+['Test 32', 33.0, 4.0], 
+['Test 33', 1.0, 0.0], 
+['Test 34', 18.0, 5.0], 
+['Test 35', 12.0, 1.0], 
+['Test 36', 31.0, 1.0], 
+['Test 37', 50.0, 4.0], 
+['Test 38', 4.0, 4.0], 
+['Test 39', 31.0, 4.0], 
+['Test 40', 8.0, 0.0], 
+
+        ],
+        false);
+
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data);
+  }
+</script>
+</head>
+<body>
+<div id = 'chart_div' style='width:800; height:600'><div>
+</body>
+
+</html>

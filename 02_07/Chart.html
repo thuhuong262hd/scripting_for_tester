@@ -1,0 +1,32 @@
+<html><head><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart(){
+      var data = google.visualization.arrayToDataTable([
+      ['Test Name', 'Diff From Avg'],
+      ['Test 1', 5.4], 
+['Test 2', 4.199999999999999], 
+['Test 3', 2.1999999999999993], 
+['Test 4', -5.199999999999999], 
+['Test 5', -11.4], 
+['Test 6', 7.0], 
+['Test 7', 0.1999999999999993], 
+['Test 8', 4.6], 
+['Test 9', 3.8], 
+['Test 10', -1.1999999999999993], 
+
+      ],
+      false);
+
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data);
+  }
+</script>
+</head>
+<body>
+<div id = 'chart_div' style='width:800; height:600'><div>
+</body>
+
+</html>
